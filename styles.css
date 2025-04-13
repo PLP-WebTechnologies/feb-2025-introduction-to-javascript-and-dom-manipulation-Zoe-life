@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure full viewport height */
+    box-sizing: border-box;  /* Include padding and border in element's total width and height */
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    width: 90%; /* Take up most of the viewport width */
+    max-width: 800px; /* But don't get too wide */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space below the main section */
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #333;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: auto; /* Push footer to the bottom */
+    box-sizing: border-box;
+}
+
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#dynamicText {
+    font-style: italic;
+    color: #555;
+}
+
+#styledElement {
+    margin: 1rem 0;
+    /* The JavaScript will add more styles, this is the base */
+}
+
+#addElementBtn, #removeElementBtn {
+    padding: 0.75rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#addElementBtn:hover, #removeElementBtn:hover {
+    background-color: #45a049;
+}
+
+#container {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Added to make the page responsive */
+@media screen and (max-width: 600px) {
+    main {
+        width: 95%;
+        padding: 1rem;
+    }
+    #addElementBtn, #removeElementBtn{
+        width: 100%;  /* Make buttons take full width on small screens */
+        margin: 0.5rem 0;
+    }
+}
